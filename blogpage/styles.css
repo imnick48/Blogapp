@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+body{
+  background-color: #333;
+}
+nav {
+    height: 70px;
+    background-color: #333;
+    overflow: hidden;
+    display: flex ;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    float: left;
+  }
+  nav ul{
+    top: 0;
+  }
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 5s;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+    border-radius: 20px;
+    color: black;
+  }
+
+.navlogo{
+
+    width: 8dvw;
+    height: 5dvh;
+    max-height: 70px;
+    min-height: 50px;
+    max-width: 200px;
+    min-width: 160px;
+
+
+}
+.rblog{
+  width: 100%;
+  height: fit-content;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  border-radius: 54px;
+  background: linear-gradient(225deg, #f0f0f0, #cacaca);
+  transition: all .5s;
+  display: flex;
+  justify-content: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.rblog h1{
+    margin: 1rem;
+}
+
+.rblog img{
+  height: 60dvh;
+  width: 40dvw;
+  justify-self: center;
+  align-self: center;
+  margin: 2em;
+  border-radius: 50px;
+}
+.rblog p{
+    margin: 2rem;
+}
+.rblog:hover{
+  margin-top: 90px; 
+  box-shadow:  -5px 5px 3px #a6a6a6,
+               5px -5px 3px #ffffff;
+}
+footer{
+  background-color: rgb(119, 119, 119);
+}
+
+@media (max-width: 800px) {
+  nav a{
+    font-size: 10px ;
+  }
+  .rblog{
+    flex-direction: column;
+    height: 50vh;
+  }
+}
