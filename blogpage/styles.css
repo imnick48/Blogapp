@@ -56,18 +56,25 @@ nav {
 
 
 }
-.rblog{
-  width: 100%;
-  height: fit-content;
-  margin-top: 70px;
-  margin-bottom: 50px;
+.rblog {
+  width: 80%;
+  max-width: 1000px;
+  min-height: 70vh;
+  margin: 70px auto 50px;
+  padding: 2rem;
   border-radius: 54px;
   background: linear-gradient(225deg, #f0f0f0, #cacaca);
-  transition: all .5s;
+  transition: all 0.5s;
   display: flex;
-  justify-content: start;
-  justify-content: space-evenly;
   flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.rblog .content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
 }
 .rblog h1{
     margin: 1rem;
